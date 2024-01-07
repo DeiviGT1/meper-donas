@@ -52,6 +52,7 @@ input{
     padding: 0 10px;
     font-size: 16px;
     margin-right: 10px;
+    z-index: 1;
 }
 
 input:hover{
@@ -103,6 +104,7 @@ footer {
     color: #333;
     padding: 1rem;
     text-align: center;
+    z-index: 0;
 }
 
 footer a{
