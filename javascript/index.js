@@ -5,15 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         // Mueve el botón a una posición aleatoria
-        var randomX = Math.random() * (window.innerWidth - 1000);
-        var randomY = Math.random() * (window.innerHeight - 40);
+        var randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+        var randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+
         noButton.style.left = randomX + "px";
         noButton.style.top = randomY + "px";
 
         // Agrega la clase para establecer el estilo de posición absoluta
         noButton.classList.add("random-position");
     });
+
+    // Ajustar la posición inicial del botón para que sea visible en pantallas pequeñas
+    var initialX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+    var initialY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+    noButton.style.left = initialX + "px";
+    noButton.style.top = initialY + "px";
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var siButton = document.getElementsByName("SI")[0];

@@ -131,8 +131,8 @@ footer a{
     }
     
     .input {
-        width: 100%;
-        height: 100%;
+        width: 15rem;
+        height: 120px;
         font-size: 1.2rem;
         text-wrap: balance;
     }
