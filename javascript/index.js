@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         // Mueve el botón a una posición aleatoria
-        var randomX = Math.random() * (window.innerWidth - 100);
+        var randomX = Math.random() * (window.innerWidth - 1000);
         var randomY = Math.random() * (window.innerHeight - 40);
         noButton.style.left = randomX + "px";
         noButton.style.top = randomY + "px";
