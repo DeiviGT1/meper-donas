@@ -37,8 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var siButton = document.getElementsByName("MEME")[0];
     var mainPage = document.getElementsByTagName("main")[0];
     var image = document.getElementsByTagName("img")[0];
-    var randomNumber = Math.floor(Math.random() * 8);
-    var randomNumber = 1;
+    function randomIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+      }
+
+    var randomNumber = randomIntFromInterval(0,7)
 
     siButton.addEventListener("click", function (event) {
         // Previene la acción predeterminada del formulario
